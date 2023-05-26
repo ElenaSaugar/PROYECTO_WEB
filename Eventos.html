@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Microbe&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&family=Nerko+One&family=PT+Sans+Narrow&family=Pacifico&family=Rubik+Microbe&family=Solway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nerko+One&family=Pacifico&family=Rubik+Microbe&family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CCS1.css">
+    <link rel="icon" type="iamgen/jpg" href="imagenes/icono.png">
+    <title>Eventos</title>
+</head>
+<body>
+    <table   class="fondo">
+<!--tr filas y td columnas/celdas-->
+
+
+<tr> <!--primera fila-->
+    <td class="logo"><img src="imagenes/logo.jpg"></td>
+    <td colspan="4" class="imgpasteleria" > <div class="contenedor">  <div class="letra">Pastelería Délice</div> <img src="IMAGENES/img1.jpg" alt="" class="imgpasteleria"></div> </td>
+</tr>
+<tr><!--segunda fila-->
+    <td class= "inicio"  ><a href="Index.html" style="text-decoration:none">Inicio</a></td>
+    <td class= "restobotones" ><a href="Nosotros.html"style="text-decoration:none">Nosotros</a></td>
+    <td class= "restobotones" ><a href="Productos.html"style="text-decoration:none">Productos</a></td>
+    <td class= "restobotones" ><a href="Eventos.html"style="text-decoration:none">Eventos</a></td>
+    <td class= "restobotones" ><a href="Contacto.html"style="text-decoration:none">Contacto</a></td>
+</tr>
+<!--tercera fila-->
+    <tr>
+    <td class="textoeventoespecial" colspan="5"> ¿Tienes algún evento especial?
+    </tr>
+
+    <tr><!--cuarta fila-->
+        <td colspan="5">
+        <table align="center"> 
+        <td class="textoeventos" > Babyshower</td>
+        <td class="textoeventos"  >Bodas</td>
+        </tr>
+
+        <!--quinta fila-->
+        <tr>
+            
+           <td colspan="5">
+                <table  align="center"> 
+                   
+            <td colspan="2" height="350px"> <img src="IMAGENES/baby.png" width="400px" height="300px" align="right" > </td>
+            <td colspan="3" height="350px"> <img src="imagenes/boda.jpg"  width="400px" height="300px"align="center">  </td>
+            </tr>
+            <tr><!--sexta fila-->
+               <td colspan="5"><hr size="20px" col width="100%"></td> 
+            </tr>
+    <!--septima fila-->
+    <tr class="tablaformulario">
+        <td colspan="5">
+             <table  align="center" width="960px" >
+                <form name="formulario" method="post"  action=" mailto:raul.rodriguez@universidadeuropea.es">
+            <tr class="filas">
+                <td ></td>
+                <td class="info" id="">¡Envíanos información!</td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Nombre</td> 
+                <td><input type="text" ></td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Apellidos</td>
+                <td ><input type="text" id=""></td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Teléfono</td>
+                <td><input type="tel" name="" id=""> </td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Email</td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Dirección</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Población</td>
+                <td><input list="poblacion">
+                    <datalist id="poblacion">
+                    <option value="Madrid">Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Málaga">Málaga</option>
+                    <option value="Bilbao">Bilbao</option>
+                </datalist>
+                </td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Tipo de evento</td>
+                <td><input type="checkbox" name="evento" value="Boda" id=""> Boda
+                    <input type="checkbox" name="evento" value="Babyshower" id=""> Babyshower
+                    <input type="checkbox" name="evento" value="Cumpleaños" id=""> Cumpleaños
+                    <input type="checkbox" name="evento" value="Empresa" id=""> Empresa
+                    <input type="checkbox" name="evento" value="Otro" id=""> Otro
+                </td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">¿Entrega a domicilio?</td>
+                <td><input type="radio" name="recoger" value="Si" id=""> Si
+                    <input type="radio" name="recoger" value="No" id=""> No, recoger en tienda
+                </td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Coméntanos tu idea</td>
+                <td><label for="comentario"></label><textarea cols = "50" rows = "10"  ></textarea></textarea>
+                </td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Puedes adjuntar una foto</td>
+                <td><input type="file" name="adjunto" accept=".jpg, .png, .pdf" id=""></td>
+            </tr>
+            <tr class="filas">
+                <td class="datos">Opción: Enviar o Resetear</td>
+                <td><input type="submit" value="Enviar" id="">
+                    <input type="reset" value="Resetear" id="">
+                </td>
+            </tr>
+        </form>
+
+            
+        </td>
+    </tr>
+    </table>
+</table>
+</table>
+<tr><!--sexta fila-->
+  
+    <td colspan="3"  class="autor">
+        Aviso legal/Politica de cookies
+    </td>
+    <td colspan="2" class="daw">@Autor:Elena Saugar 1º DAW</td>
+</tr>
+
+    </table>
+    
+</body>
+</html>
